@@ -3,7 +3,6 @@ import { Button, Menu, Typography, Avatar} from 'antd';
 import {HomeOutlined, InteractionOutlined, BulbOutlined, FundOutlined, MenuOutlined} from '@ant-design/icons'
 import {Link} from 'react-router-dom';
 import icon from '../images/btc.jpg'
-import { Homepage, Cryptocurrencies,News} from './index';
 const Navbar = () => {
     const [activeMenu,setActiveMenu] = useState(true);
     const [screenSize,setScreenSize] = useState(null);

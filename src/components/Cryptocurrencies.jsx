@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import millify from "millify";
 import { Link } from "react-router-dom";
-import { Typography,Card, Row, Col, Input } from "antd";
+import { Card, Row, Col, Input } from "antd";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import {Loader} from './index.js';
 function Cryptocurrencies({ simplified }) {
@@ -9,7 +9,6 @@ function Cryptocurrencies({ simplified }) {
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [searchTerm, setSearchTerm] = useState("");
   const [cryptos, setCryptos] = useState([]);
-  const {Text} = Typography;
   useEffect(() => {
     const filteredData = cryptosList?.data?.coins.filter((coin) =>
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -42,7 +41,7 @@ function Cryptocurrencies({ simplified }) {
                 extra={
                   <img
                     className="crypto-image"
-                    alt="Crypto Currency Image"
+                    alt="Crypto Currency"
                     src={currency.iconUrl}
                   />
                 }

@@ -3,8 +3,6 @@ import { useGetCryptosQuery } from '../services/cryptoApi.js';
 import {Typography,Row,Col,Select,Button,Input,Space,Card} from 'antd';
 import {Loader} from './index.js';
 import { useGetCryptoRateQuery } from '../services/cryptoRateApi.js';
-import FormItemInput from 'antd/es/form/FormItemInput.js';
-import { convertLegacyProps } from 'antd/es/button/button.js';
 
 const {Option} = Select;
 function Converter() {

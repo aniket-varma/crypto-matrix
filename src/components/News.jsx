@@ -5,7 +5,7 @@ import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import {Loader} from './index.js';
 
-const {Text,Title} = Typography;
+const {Text} = Typography;
 const {Option} = Select;
 const demoImage = 'http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg'
 function News({simplified}) {
