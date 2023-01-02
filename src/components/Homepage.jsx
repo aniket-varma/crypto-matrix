@@ -7,9 +7,9 @@ import { Cryptocurrencies, News, Loader} from './index.js'
 const {Title} = Typography;
 function Homepage() {
   const {data,isFetching} = useGetCryptosQuery(10);
-  const globalStats = data?.data?.stats;
   // console.log(data);
   if(isFetching)  return <Loader/>;
+  const globalStats = data?.data?.stats;
   return (
     <>
         <Title level={2} className="heading headcolor">Global Crypto Stats</Title>
