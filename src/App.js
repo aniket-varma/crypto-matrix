@@ -24,8 +24,8 @@ function App() {
 				</Layout>
 				<div className="footer">
 					<Typography.Title  level={5} style={ { color : 'white', textAlign:'center'}}>
-						Cryptoverse<br/>
-						All rights reserved
+						Crypto Matrix By Aniket Varma<br/>
+						Copyright © 2023 All Rights Reserved
 					</Typography.Title>
 					<Space>
 						<Link to="/">Home</Link><p>|</p>
